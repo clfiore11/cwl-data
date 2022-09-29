@@ -171,5 +171,5 @@ cwl_2018_2019_snd.iloc[:, range(11, 40)] = cwl_2018_2019_snd.iloc[
     :, range(10, 40)
 ].apply(pd.to_numeric, errors="coerce")
 
-cwl_2018_2019_snd.to_csv("cwl_2018_2019_snd.csv")
-cwl_2018_2019_hp.to_csv("cwl_2018_2019_hp.csv")
+cwl_2018_2019_snd.to_csv("cwl_2018_2019_snd.csv", index=False)
+cwl_2018_2019_hp.to_csv("cwl_2018_2019_hp.csv", index=False)
