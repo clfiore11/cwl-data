@@ -158,7 +158,7 @@ cwl_2018_2019_snd = pd.concat([cwl_2018_snd])
 cwl_2018_2019_hp["accuracy (%)"] = cwl_2018_2019_hp["accuracy (%)"].str.replace("%", "")
 cwl_2018_2019_hp["duration (s)"] = cwl_2018_2019_hp["duration (s)"].astype(float)
 
-cwl_2018_2019_hp.iloc[:, range(10, 40)] = cwl_2018_2019_hp.iloc[:, range(10, 40)].apply(
+cwl_2018_2019_hp.iloc[:, range(11, 40)] = cwl_2018_2019_hp.iloc[:, range(10, 40)].apply(
     pd.to_numeric, errors="coerce"
 )
 
@@ -167,7 +167,7 @@ cwl_2018_2019_snd["accuracy (%)"] = cwl_2018_2019_snd["accuracy (%)"].str.replac
 )
 cwl_2018_2019_snd["duration (s)"] = cwl_2018_2019_snd["duration (s)"].astype(float)
 
-cwl_2018_2019_snd.iloc[:, range(10, 40)] = cwl_2018_2019_snd.iloc[
+cwl_2018_2019_snd.iloc[:, range(11, 40)] = cwl_2018_2019_snd.iloc[
     :, range(10, 40)
 ].apply(pd.to_numeric, errors="coerce")
 
